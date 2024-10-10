@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+</head>
+<body>
+    <header>
+        <h1>Meu Caderno Virtual</h1>
+        <nav>
+            <ul>
+              
+                
+                
+                        <!-- Ícone do menu hambúrguer -->
+                        <div class="menu-hamburguer" id="menuToggle">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                
+                        <!-- Opções que aparecem ao abrir o menu -->
+                        <nav id="menu" class="menu">
+                            <ul> <li> <a href="#">Meu Perfil</a></li></ul>
+                            <ul>
+                                <li><a href="sobreNos.html">sobre Nós</a></li>
+                            </ul>
+                            <ul>
+                               
+                                <li><a href="#">Sair da conta</a></li>
+                               
+                             
+                            </ul>
+                        </nav>
+                    
+            
+  </li>
+             <li><a href="Anatacoes.html"rel="next">Anotações</a></li>
+             <li><a href="tarefas.html"rel="next">Tarefas</a></li>
+              
+                <li><a href="calendar.html" rel="next">Calendário</a></li>
+            </ul>
+        </nav>
+    </header>
+
+              
+
+    <main>
+        <section class="note-section">
+            <h2>Minhas Anotações</h2>
+            <textarea placeholder="Escreva suas anotações aqui..."></textarea>
+            <button>Salvar</button>
+        </section>
+       
+        
+        <div id="note-list">
+            <ul id="note-results"></ul>
+        </div>
+        
+        <div id="edit-section" style="display: none;">
+            <textarea id="note-textarea" rows="5" cols="30"></textarea>
+            <button id="save-button">Salvar</button>
+        </div>
+
+        <section class="tasks-section">
+            <h2>Tarefas Pendentes</h2>
+            <ul>
+                <li>Tarefa 1 <input type="checkbox"></li>
+                <li>Tarefa 2 <input type="checkbox"></li>
+                <li>Tarefa 3 <input type="checkbox"></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Agenda Pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="controls.js"></script>
+</body>
+</html>

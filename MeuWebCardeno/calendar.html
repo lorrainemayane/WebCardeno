@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<header class="calendar-header-title">
+    <a href="javascript:history.back()" class="back-button">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+    <h1>Meu Calendário</h1>
+    <p>Organize suas tarefas e eventos</p>
+  </header> 
+  
+<body>
+     
+  <div class="calendar">
+    <div class="calendar-header">
+      <button id="prevMonth">❮</button>
+      <div id="monthAndYear"></div>
+      <button id="nextMonth">❯</button>
+    </div>
+    <table class="calendar-table">
+      <thead>
+        <tr>
+          <th>Dom</th>
+          <th>Seg</th>
+          <th>Ter</th>
+          <th>Qua</th>
+          <th>Qui</th>
+          <th>Sex</th>
+          <th>Sáb</th>
+        </tr>
+      </thead>
+      <tbody id="calendarBody">
+        <!-- Dias serão inseridos aqui dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+  <div>
+    <h2>Adicionar Evento</h2>
+    <input type="date" id="eventDate" />
+    <input type="text" id="eventDescription" placeholder="Descrição do evento" />
+    <button id="addEventButton">Adicionar Evento</button>
+</div>
+
+  <script src="teste2.js"></script>
+</body>
+</html>

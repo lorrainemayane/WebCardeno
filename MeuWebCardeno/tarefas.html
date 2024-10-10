@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tarefas</title>
+    <link rel="stylesheet" href="estilo.css">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="javascript:history.back()" class="back-button">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+    <h1> lista de tarefas</h1>
+    <nav>
+           
+            <ul>
+             
+            
+                <ul>       
+ <!-- Ícone do menu hambúrguer -->
+                    <div class="menu-hamburguer" id="menuToggle">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+            
+                    <!-- Opções que aparecem ao abrir o menu -->
+                    <nav id="menu" class="menu">
+                        <ul><li><a href="#">Tarefas feitas</a></li></ul>
+                        <hr>
+                        <Ul>
+                         <li><a href="">Tarefas Pendentes</a></li>
+                        </Ul>
+                        <hr>
+                        <ul>
+                        
+                            <li><a href="#">Fechar</a></li>    
+                        </ul>
+                       
+                    </nav>
+                    </nav>
+    
+        <input id="inputtarefas" type="text" placeholder="Digite sua tarefa">
+        <button onclick="addtarefas()"id="btn-add" class="add">Adicionar</button>
+    </header>
+    <main id="AreaLista">
+     
+
+
+    
+       
+    </main> 
+    <script src="controls.js"></script>
+</body>
+</html>

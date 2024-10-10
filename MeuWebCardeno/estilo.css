@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0 ;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 246, 235);
+ 
+}
+h1{
+    text-align: center;
+   
+    color: white;
+    font-size: 2rem;
+    
+    margin-right: 20px;
+    
+}
+header{
+    display: flex;
+    flex-flow:row wrap ;
+    align-items: center;
+    width: 100%;
+    background-color:#7c96ac;
+    margin: auto;
+    margin-bottom: 2%;
+
+}
+
+
+input{
+  
+    height: 50px;
+    font-size: 1rem;
+    width: 80%;
+padding-left: 10%;
+}
+button.add{
+    width: 20%;
+    cursor: pointer;
+    background-color:  rgb(101, 122, 150);
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto auto;
+  
+    padding: top 40px; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.item{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    box-shadow: 0 0 20px #ccc;
+    margin-bottom: 1%;
+    align-items: center;
+    cursor: pointer;
+}
+.item-icone{
+    flex: 10%;
+
+    text-align: center;
+    font-size: 30px;
+}
+
+.item-nome{
+    flex: 80%;
+   
+    font-size: 15px;
+    font-weight:bold ;
+}
+.item-botao{
+    flex: 10%;
+
+  
+}
+.delete{
+    background-color: rgb(68, 64, 64);
+    color: white;
+    border: none;
+    padding: 10%;
+    height: 50px;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+.fa-check-circle{
+    color: rgb(140, 196, 140);
+}
+.item.clicado{
+    background-color: rgb(206, 231, 223);
+}
+.item.clicado .item-nome{
+text-decoration: line-through;
+color: gray;
+
+}
+
+
+
+
+/* Estilos para o ícone de menu hambúrguer */
+.menu-hamburguer {
+    width: 30px;
+    height: 25px;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.menu-hamburguer div {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Estilos do menu oculto */
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background-color: #41393d;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.menu ul li {
+    margin: 10px 0;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.menu ul li a:hover {
+    color: #ffc3a0;
+}
+
+/* Estilo para quando o menu estiver ativo */
+.menu.active {
+    display: block;
+}
+
+/* Transformações do ícone ao abrir o menu */
+.menu-hamburguer.active div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-hamburguer.active div:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-hamburguer.active div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Seção de tarefas */
+.tasks-section {
+    padding: 20px;
+}
+
+#task-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-form input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#task-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#task-list li span {
+    flex: 1;
+    margin-left: 10px;
+}
+
+#task-list li button {
+    margin-left: 10px;
+}
+
+.back-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #465766; /* Cor da bola */
+    border-radius: 50%; /* botão redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 20px; /* Espaçamento entre o ícone e o título */
+    box-shadow: 0 4px 8px rgba(107, 107, 107, 0.2); /* Sombras para um efeito sutil */
+}
+
+.back-button:hover {
+    background-color: #c2c595; /* Cor ao passar o mouse */
+}
+
+
+
+
+
+

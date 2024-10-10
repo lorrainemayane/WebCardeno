@@ -1,0 +1,99 @@
+header {
+    background-color:#7c96ac;
+    color: white;
+    padding: 15px;
+    text-align: center;
+  
+    flex-direction: column;
+   
+   
+ 
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(255, 246, 235);
+    flex-direction: column;
+  }
+  
+  
+  .calendar {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .calendar-header button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar-table th, .calendar-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  .calendar-table td {
+    cursor: pointer;
+  }
+  
+  .calendar-table td:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .calendar-table td.active {
+    background-color: #67acc4;
+    color: white;
+  }
+  .calendar-header-title{
+    width: 100%;
+    margin-bottom: 20px;
+    margin:  -198px 0 70px 0;
+    text-align: center;
+    
+  }
+
+  .back-button {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #465766; /* Cor da bola */
+    border-radius: 50%; /* botão redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin-right: 0; /* Espaçamento entre o ícone e o título */
+    box-shadow: 0 4px 8px rgba(107, 107, 107, 0.2); /* Sombras para um efeito sutil */
+  
+}
+
+.back-button:hover {
+    background-color: #beb487; /* Cor ao passar o mouse */
+}
