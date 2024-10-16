@@ -92,12 +92,22 @@ ul li {
 
 footer {
     text-align: center;
-    padding: 20px;
+  
     background-color: #7c96ac;
     color: white;
-    position:fixed;
+   
     width: 100%;
     bottom: 0;
+
+
+     
+        padding: 10px;
+    
+        position: relative;
+      
+    
+    
+    
 }
 /* Estilos para o ícone de menu hambúrguer */
 .menu-hamburguer {
@@ -255,6 +265,32 @@ section {
 section h2 {
     margin-bottom: 1rem;
     color: #151618;
+}
+
+/* css para a pagina sobre nos */
+
+.sobreNos {
+    margin: 20px 0;
+    transition: transform 0.2s;
+}
+
+.sobreNos:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-sobre {
+    max-width: 50%;  /* A imagem não excederá a largura do contêiner */
+    height: auto;     /* Mantém a proporção da imagem */
+    display: block;   /* Para garantir que não haja espaço extra embaixo da imagem */
+    margin: 20px 0;   /* Adiciona um espaço acima e abaixo da imagem */
+}
+
+
+.imagem-funcionalidade {
+    width: 150px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 

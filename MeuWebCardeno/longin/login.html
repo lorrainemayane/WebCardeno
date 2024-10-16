@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="favicon (1).ico" type="image/x-icon">
+</head>
+<body>
+   
+ 
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Criar uma conta</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>ou use seu e-mail para cadastro</span>
+			<input type="text" id="nome" placeholder="Nome" />
+<input type="email" id="emailCadastro" placeholder="Email" />
+<input type="password" id="senhaCadastro" placeholder="Senha" />
+
+
+
+			<button>Cadastrar</button>
+			<div id="mensagemErroCadastro"></div>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Entrar</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>
+                ou use sua conta</span>
+			<input type="email" id="emailLogin" placeholder="Email" />
+<input type="password" id="senhaLogin" placeholder="Senha" />
+
+			<a href="#">Esqueceu sua senha?</a>
+
+			<button>Entrar</button>
+			<div id="mensagemErroLogin" style="color: red;"></div> <!-- Aqui as mensagens de erro aparecerão -->
+
+
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>olá!</h1>
+				<p>Após o cadastro volte e entre com suas informações pessoais</p>
+				<button class="cadast" id="Entrar">Entrar</button>
+
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Seja bem-vindo!</h1>
+				<p>Cadastre-se e venha desfrutar de uma vida mais organizada</p>
+				<button class="cadast" id="Cadastre">Cadastre-se</button>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<script src="login.js"></script>
+</body>
+</html>
